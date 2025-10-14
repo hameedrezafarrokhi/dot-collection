@@ -1,0 +1,83 @@
+{
+    "appLauncher": {
+        "pinnedExecs": [
+        ]
+    },
+    "audio": {
+        "visualizerType": "linear"
+    },
+    "bar": {
+        "monitors": [
+            "LVDS-1"
+        ],
+        "showActiveWindow": true,
+        "showBrightness": true,
+        "showMedia": true,
+        "showNotificationsHistory": true,
+        "showSystemInfo": true,
+        "showTray": true
+    },
+    "brightness": {
+        "brightnessStep": 11
+    },
+    "colorSchemes": {
+        "darkMode": true,
+        "predefinedScheme": "/nix/store/n712svssb95bddfq0phqqbbk9k2kkbav-source/Assets/ColorScheme/Catppuccin.json",
+        "useWallpaperColors": false
+    },
+    "dock": {
+        "autoHide": false,
+        "exclusive": false,
+        "monitors": [
+        ]
+    },
+    "general": {
+        "avatarImage": "/home/hrf/.face",
+        "dimDesktop": true,
+        "showScreenCorners": false
+    },
+    "location": {
+        "name": "Tokyo",
+        "reverseDayMonth": false,
+        "showDateWithClock": false,
+        "use12HourClock": false,
+        "useFahrenheit": false
+    },
+    "network": {
+        "bluetoothEnabled": true,
+        "wifiEnabled": true
+    },
+    "notifications": {
+        "monitors": [
+            "LVDS-1"
+        ]
+    },
+    "screenRecorder": {
+        "audioCodec": "opus",
+        "audioSource": "default_output",
+        "colorRange": "limited",
+        "directory": "~/Videos",
+        "frameRate": 60,
+        "quality": "very_high",
+        "showCursor": true,
+        "videoCodec": "h264"
+    },
+    "ui": {
+        "fontFamily": "Roboto",
+        "monitorsScale": [
+        ]
+    },
+    "wallpaper": {
+        "current": "/home/hrf/Pictures/Wallpapers/macchiato-hald8-background.png2.png",
+        "directory": "/home/hrf/Pictures/Wallpapers",
+        "isRandom": false,
+        "randomInterval": 290,
+        "swww": {
+            "enabled": false,
+            "resizeMethod": "crop",
+            "transitionDuration": 1.1,
+            "transitionFps": 60,
+            "transitionType": "random"
+        }
+    }
+}

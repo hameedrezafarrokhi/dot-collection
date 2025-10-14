@@ -1,0 +1,15 @@
+[General]
+AutoStart=true
+Backend=FileResources
+RunMode=Auto
+Version=3.11.1
+
+[Notification Messages]
+ConfirmAlarmDeletion=true
+EmailQueuedNotify=false
+QuitWarn=
+
+[View]
+DateNavigatorTop=true
+ShowDateNavigator=false
+ShowResources=false

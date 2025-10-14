@@ -1,0 +1,25 @@
+[Keyboard]
+NumLock=0
+RepeatDelay=600
+RepeatRate=25.0
+
+[Libinput][2][7][SynPS/2 Synaptics TouchPad]
+ClickMethod=1
+DisableWhileTyping=false
+Enabled=true
+LeftHanded=false
+LmrTapButtonMap=false
+MiddleButtonEmulation=true
+NaturalScroll=false
+PointerAcceleration=0
+PointerAccelerationProfile=2
+ScrollFactor=0.5
+ScrollMethod=1
+TapAndDrag=true
+TapDragLock=true
+TapToClick=true
+
+[Mouse]
+X11LibInputXAccelProfileFlat=true
+cursorSize=24
+cursorTheme=catppuccin-macchiato-sapphire-cursors

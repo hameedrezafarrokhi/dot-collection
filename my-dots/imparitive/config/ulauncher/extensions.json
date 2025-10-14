@@ -1,0 +1,23 @@
+{
+    "com.github.antoniocarioca.ulauncher-brave-search": {
+        "id": "com.github.antoniocarioca.ulauncher-brave-search",
+        "url": "https://github.com/AntonioCarioca/ulauncher-brave-search",
+        "updated_at": "2025-06-09T06:23:32.520772",
+        "last_commit": "0e7363bb4dad5bfd61c7e0def7928b0ee909a076",
+        "last_commit_time": "2025-05-11T20:19:57"
+    },
+    "com.github.hassanradwannn.ulauncher-plocate": {
+        "id": "com.github.hassanradwannn.ulauncher-plocate",
+        "url": "https://github.com/hassanradwannn/ulauncher-plocate",
+        "updated_at": "2025-06-09T06:26:39.504709",
+        "last_commit": "dfaf37adc175936f18a4cbaa080ef14d2a4cb803",
+        "last_commit_time": "2025-06-08T21:00:55"
+    },
+    "com.github.ulauncher.ulauncher-hash": {
+        "id": "com.github.ulauncher.ulauncher-hash",
+        "url": "https://github.com/Ulauncher/ulauncher-hash",
+        "updated_at": "2025-06-09T06:29:26.309017",
+        "last_commit": "237dbb3610ff04df993c3223b12df42cb7df221f",
+        "last_commit_time": "2022-09-04T14:29:55"
+    }
+}

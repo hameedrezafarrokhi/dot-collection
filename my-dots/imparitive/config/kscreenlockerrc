@@ -1,0 +1,17 @@
+[Daemon]
+Autolock=true
+LockOnResume=true
+Timeout=120
+LockGrace=10
+LockOnStart=false
+RequirePassword=true
+
+[Greeter]
+WallpaperPlugin=org.kde.image
+
+[Greeter][LnF][General]
+alwaysShowClock=true
+showMediaControls=true
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/nix/store/9xar6z84faklp18vpyjv9c40bzg54xsk-source/user/hrf/themes/background.png

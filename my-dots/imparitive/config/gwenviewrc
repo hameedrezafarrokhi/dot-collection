@@ -1,0 +1,42 @@
+[Crop]
+CropPreserveAspectRatio=true
+CropRatioHeight=4
+CropRatioIndex=17
+CropRatioWidth=3
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[ImageView]
+ThumbnailSplitterSizes=477,136
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/oled-hald8-background.png.png
+File10[$e]=$HOME/.config/panel-colorizer/presets/Black Color Lines/preview.png
+File2[$e]=$HOME/Pictures/macchiato-hald8-background.png2.png
+File3[$e]=$HOME/Pictures/nix-artwork/k914i0cd2pv56gidyqc23m3frh4vbpzy-source/wallpapers/nix-wallpaper-nineish-catppuccin-frappe.png
+File4[$e]=$HOME/Pictures/nix-artwork/k914i0cd2pv56gidyqc23m3frh4vbpzy-source/wallpapers/nix-wallpaper-recursive.png
+File5[$e]=$HOME/Pictures/nix-artwork/k914i0cd2pv56gidyqc23m3frh4vbpzy-source/wallpapers/nix-wallpaper-watersplash.png
+File6[$e]=$HOME/Pictures/nix-artwork/k914i0cd2pv56gidyqc23m3frh4vbpzy-source/wallpapers/nix-wallpaper-mosaic-blue.png
+File7[$e]=$HOME/Desktop/swappy-20250816_034147.png
+File8[$e]=$HOME/Misc/file.svg
+File9[$e]=$HOME/Pictures/screenshot_e93c9ffd5ff4 (Edit).png
+Name1[$e]=oled-hald8-background.png.png
+Name10[$e]=preview.png
+Name2[$e]=macchiato-hald8-background.png2.png
+Name3[$e]=nix-wallpaper-nineish-catppuccin-frappe.png
+Name4[$e]=nix-wallpaper-recursive.png
+Name5[$e]=nix-wallpaper-watersplash.png
+Name6[$e]=nix-wallpaper-mosaic-blue.png
+Name7[$e]=swappy-20250816_034147.png
+Name8[$e]=file.svg
+Name9[$e]=screenshot_e93c9ffd5ff4 (Edit).png
+
+[SideBar]
+InformationSplitterSizes=236,239
+IsVisible ViewMode=true
+SideBarSplitterSizes=199,565

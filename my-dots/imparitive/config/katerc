@@ -1,0 +1,57 @@
+[General]
+Days Meta Infos=30
+Quickopen Filter Mode=0
+Quickopen List Mode=true
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Show Url Nav Bar=true
+
+[KTextEditor Document]
+Auto Detect Indent=true
+Indentation Width=4
+Keep Extra Spaces=false
+ReplaceTabsDyn=false
+Tab Handling=2
+Tab Width=6
+
+[KTextEditor Renderer]
+Animate Bracket Matching=true
+Auto Color Theme Selection=false
+Color Theme=Catppuccin Macchiato
+Line Height Multiplier=1
+Show Indentation Lines=true
+Show Whole Bracket Expression=false
+Text Font=Comic Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font Features=
+Word Wrap Marker=false
+
+[KTextEditor View]
+Auto Brackets=false
+Bracket Match Preview=true
+Chars To Enclose Selection=<>(){}[]'"`
+Input Mode=0
+
+[MainWindow]
+1280x720 screen: Height=680
+1280x720 screen: Width=632
+1280x720 screen: Window-Maximized=true
+1366x768 screen: Height=680
+1366x768 screen: Width=660
+640x480 screen: Window-Maximized=true
+
+[UiSettings]
+ColorScheme=Catppuccin Macchiato Sapphire
+
+[filetree]
+editShade=183,220,246
+listMode=false
+middleClickToClose=false
+shadingEnabled=true
+showCloseButton=false
+showFullPathOnRoots=false
+showToolbar=true
+sortRole=0
+viewShade=211,190,222

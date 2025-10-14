@@ -1,0 +1,10 @@
+[GuiConfig]
+includePointer=true
+quitAfterSaveCopyExport=true
+
+[ImageSave]
+lastImageSaveLocation=file:///home/hrf/.config/panel-colorizer/presets/hjv/preview.png
+translatedScreenshotsFolder=Screenshots
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts

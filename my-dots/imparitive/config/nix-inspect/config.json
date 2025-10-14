@@ -1,0 +1,12 @@
+{
+  "bookmarks": [
+    {
+      "display": "nixos",
+      "path": "nixosConfigurations.nixos"
+    },
+    {
+      "display": "hrf",
+      "path": "nixosConfigurations.nixos.config.home-manager.users.hrf"
+    }
+  ]
+}

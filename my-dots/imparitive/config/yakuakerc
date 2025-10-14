@@ -1,0 +1,18 @@
+[Appearance]
+BackgroundColorOpacity=10
+HideSkinBorders=true
+Skin=nordic-yakuake-skin
+SkinInstalledWithKns=true
+TerminalHighlightOnManualActivation=true
+
+[Dialogs]
+FirstRun=false
+
+[Notification Messages]
+hinding_title_bar=false
+
+[Window]
+DynamicTabTitles=true
+Height=80
+KeepOpen=false
+ShowSystrayIcon=false

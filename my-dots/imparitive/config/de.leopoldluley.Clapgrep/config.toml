@@ -1,0 +1,18 @@
+last_version = "25.05+1"
+search_path = "/home/hrf"
+
+[window]
+width = 853
+height = 480
+maximized = false
+
+[flags]
+case_sensitive = false
+include_hidden = false
+include_ignored = false
+disable_regex = false
+
+[search]
+names = true
+pdf = true
+office = true

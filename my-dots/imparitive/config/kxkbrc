@@ -1,0 +1,6 @@
+[Layout]
+DisplayNames=EN,FA
+LayoutList=us,ir
+Use=true
+VariantList=,
+SwitchMode=Window

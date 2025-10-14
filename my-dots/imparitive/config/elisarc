@@ -1,0 +1,14 @@
+[ElisaFileIndexer]
+RootPath[$e]=/home/hrf/Music,/home/hrf/Downloads
+
+[PlayerSettings]
+PlayAtStartup=false
+ScanAtStartup=true
+ShowNowPlayingBackground=true
+ShowProgressOnTaskBar=true
+ShowSystemTrayIcon=true
+UseFavoriteStyleRatings=true
+
+[Views]
+InitialFilesViewPath=/home/hrf/Music
+InitialView=FrequentlyPlayed

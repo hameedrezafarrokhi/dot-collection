@@ -1,0 +1,24 @@
+[General]
+Selected Action=shutdown
+Selected Trigger=time-from-now
+
+[KShutdown Action extras]
+Command=
+Examples Created=true
+
+[KShutdown Trigger date-time]
+Date Time=2025,7,25,20,4,37.06
+
+[KShutdown Trigger file-monitor]
+Recent File=
+Recent Rule=0
+
+[KShutdown Trigger idle-monitor]
+Date Time=2000,1,1,1,0,0
+
+[KShutdown Trigger process-monitor]
+Recent Pid=1926
+Recent Program=(sd-pam)
+
+[KShutdown Trigger time-from-now]
+Date Time=2000,1,1,0,1,0

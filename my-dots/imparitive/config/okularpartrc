@@ -1,0 +1,16 @@
+[Core General]
+ObeyDRM=false
+
+[Dlg Performance]
+EnableCompositing=true
+
+[Document]
+ChangeColors=false
+
+[General]
+ShellOpenFileInTabs=true
+
+[PageView]
+ShowScrollBars=true
+SmoothScrolling=true
+ViewContinuous=true
