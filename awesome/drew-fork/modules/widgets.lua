@@ -66,6 +66,64 @@ local function create_widget_container(widget, shape_func)
     }
 end
 
+-- Tasklist buttons (for wibar)
+local tasklist_buttons = gears.table.join(
+    awful.button({ }, 1, function (c)
+    if c == client.focus then
+        c.minimized = true
+        else
+            c:jump_to()
+            client.focus = c
+            c:raise()
+            c:emit_signal("request::activate", "tasklist", {raise = true})
+          end
+      end),
+    awful.button({ }, 3, function()
+    awful.menu.client_list({ theme = { width = 250 } })
+      end),
+
+      awful.button({ }, 4, function()
+      local clients = client.get()
+      local focused_idx = 0
+      for i, c in ipairs(clients) do
+          if c == client.focus then
+              focused_idx = i
+              break
+              end
+              end
+              local next_idx = focused_idx + 1
+              if next_idx > #clients then next_idx = 1 end
+                  local c = clients[next_idx]
+                  if c then
+                      c:jump_to()
+                      client.focus = c
+                      c:raise()
+                      end
+                      end),
+                      awful.button({ }, 5, function()
+                      local clients = client.get()
+                      local focused_idx = 0
+                      for i, c in ipairs(clients) do
+                          if c == client.focus then
+                              focused_idx = i
+                              break
+                              end
+                              end
+                              local prev_idx = focused_idx - 1
+                              if prev_idx < 1 then prev_idx = #clients end
+                                  local c = clients[prev_idx]
+                                  if c then
+                                      c:jump_to()
+                                      client.focus = c
+                                      c:raise()
+                                      end
+                                      end)
+
+)
+
+-- Add to widgets table
+widgets.tasklist_buttons = tasklist_buttons
+
 -- =====================================================
 -- Basic widgets (retained from original)
 -- =====================================================

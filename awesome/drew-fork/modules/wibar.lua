@@ -2,6 +2,7 @@
 
 -- Load required libraries
 local awful = require("awful")
+local gears = require("gears")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local widgets = require("modules.widgets")
@@ -31,6 +32,60 @@ local function setup_wibar(s)
         valign = "center",
         widget = wibox.widget.textbox
     }
+
+    -- TaskBar
+  --s.mytasklist = awful.widget.tasklist {
+  --    screen = s,
+  --    filter = awful.widget.tasklist.filter.currenttags,
+  --    buttons = widgets.tasklist_buttons
+  --}
+
+  s.mytasklist = awful.widget.tasklist {
+      screen = s,
+      filter = awful.widget.tasklist.filter.alltags,
+      buttons = widgets.tasklist_buttons,
+      widget_template = {
+          {
+              {
+                  id            = 'icon_role',
+                  widget        = wibox.widget.imagebox,
+                  forced_width  = 24,  -- ← Fixed size
+                      forced_height = 24,
+              },
+              left  = 8,
+              right = 8,
+              top   = 5,
+              bottom= 4,
+              widget = wibox.container.margin
+          },
+          id            = 'background_role',
+          widget        = wibox.container.background,
+          bg            = beautiful.bg_focus or "#5e81ac",
+          shape         = function(cr, width, height)
+          gears.shape.rounded_rect(cr, width, height, 12)  -- ← 12px = strong round
+          end,
+          shape_clip    = true,
+          forced_width  = 36,  -- ← Force container size
+          forced_height = 32,
+      },
+      layout = {
+          spacing = 4,
+          layout  = wibox.layout.fixed.horizontal
+      },
+      style = {
+          -- Explicitly override the background colors in the theme
+          bg_focus = beautiful.gh_blue,  -- Use blue background for selected tag
+          fg_focus = beautiful.gh_bg,    -- Dark text (matching clock widget)
+          bg_occupied = "transparent",   -- Keep occupied tag background transparent
+          fg_occupied = beautiful.gh_fg, -- Use theme's fg color for occupied tags
+          bg_empty = "transparent",      -- Keep empty tag background transparent
+          fg_empty = beautiful.gh_comment .. "80", -- Use theme's dimmed comment color
+          shape = function(cr, width, height)
+          gears.shape.rounded_rect(cr, width, height, config.corner_radius)
+          end,
+      }
+
+  }
     
     -- Create the wibar
     s.mywibar = awful.wibar({
@@ -49,13 +104,12 @@ local function setup_wibar(s)
             layoutbox,
             separator,
             taglist,
+            separator,
         },
         { -- Middle widget
-            layout = wibox.layout.align.horizontal,
-            expand = "none",
-            nil,
-            widgets.window_title,
-            nil,
+            s.mytasklist, -- Middle widget,
+            layout = wibox.layout.fixed.horizontal,
+            spacing = 2,
         },
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
