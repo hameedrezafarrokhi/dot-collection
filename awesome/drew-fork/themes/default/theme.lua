@@ -121,7 +121,7 @@ theme.titlebar_maximized_button_focus_active      = themes_path.."default/titleb
 -- Wallpaper (Optional)
 --------------------------------------------------------------------------------
 -- Uncomment and set the path to use your custom wallpaper:
-   theme.wallpaper = "~/.config/awesome/wallpaper/astronaut-macchiato.png"
+-- theme.wallpaper = "~/.config/awesome/wallpaper/astronaut-macchiato.png"
 
 --------------------------------------------------------------------------------
 -- Layout Icons

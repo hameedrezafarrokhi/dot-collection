@@ -25,8 +25,8 @@ local rules = {
             screen = awful.screen.preferred,
             placement = awful.placement.centered + awful.placement.no_overlap + awful.placement.no_offscreen,
             size_hints_honor = false,
-            width = 1600,
-            height = 900
+          --width = 1600,
+          --height = 900
         }
     },
     -- Floating clients

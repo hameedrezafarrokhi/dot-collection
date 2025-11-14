@@ -9,7 +9,7 @@ local keybindings = {}
 -- Define client keybindings at the module level so they're accessible to rules.lua
 keybindings.clientkeys = gears.table.join(
     -- Close window with Super+Q
-    awful.key({ variables.modkey }, "q", function(c) c:kill() end,
+    awful.key({ variables.modkey }, "c", function(c) c:kill() end,
               {description = "close", group = "client"}),
     
     -- Toggle fullscreen
@@ -88,9 +88,9 @@ function keybindings.init()
     -- Global keybindings
     local globalkeys = gears.table.join(
         -- Awesome control
-        awful.key({ modkey, "Shift" }, "r", awesome.restart,
+        awful.key({ "Mod1", "Shift" }, "r", awesome.restart,
                   {description = "reload awesome", group = "awesome"}),
-        awful.key({ modkey, "Shift" }, "q", awesome.quit,
+        awful.key({ "Mod1", "Shift" }, "q", awesome.quit,
                   {description = "quit awesome", group = "awesome"}),
         awful.key({ modkey }, "h", hotkeys_popup.show_help,
                   {description = "show help", group = "awesome"}),
@@ -144,10 +144,10 @@ awful.key({ modkey }, "Down", function() awful.client.focus.bydirection("down") 
 -- Window movement (swap clients)
 awful.key({ modkey, "Shift" }, "Left", function() 
     if client.focus then awful.client.swap.byidx(1) end
-end, {description = "swap with next client", group = "client"}),
+end, {description = "swap with client left", group = "client"}),
 awful.key({ modkey, "Shift" }, "Right", function() 
     if client.focus then awful.client.swap.byidx(-1) end
-end, {description = "swap with previous by index", group = "client"}),
+end, {description = "swap with client right", group = "client"}),
 awful.key({ modkey, "Shift" }, "Up", function() 
     if client.focus then awful.client.swap.bydirection("up") end
 end, {description = "swap with client above", group = "client"}),

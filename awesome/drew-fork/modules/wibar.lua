@@ -12,8 +12,8 @@ local wibar = {}
 -- Wibar configuration
 local config = {
     position = "top",
-    height = 32,
-    opacity = 0.9
+    height = 30,
+    opacity = 1.0
 }
 
 -- Setup wibar for each screen
@@ -45,7 +45,7 @@ local function setup_wibar(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            spacing = 6,
+            spacing = 2,
             layoutbox,
             separator,
             taglist,
