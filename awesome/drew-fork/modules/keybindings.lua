@@ -45,6 +45,39 @@ keybindings.clientkeys = gears.table.join(
     awful.key({ variables.modkey }, "n", function(c) 
         c.minimized = true 
     end, {description = "minimize", group = "client"}),
+
+    -- Unminimize first unminimized windows
+    awful.key({ modkey, "Mod1" }, "n", function()
+    for _, c in ipairs(client.get()) do
+        if c.minimized then
+            c.minimized = false
+            client.focus = c
+            c:raise()
+            c:jump_to(false)
+            return
+            end
+            end
+            end, {description = "(un)Minimize first minimized window", group = "client"}),
+
+    -- Unminimize last unminimized windows
+    awful.key({ modkey, "Control" }, "n", function()
+    local minimized = {}
+    for _, c in ipairs(client.get()) do
+        if c.minimized then
+            table.insert(minimized, c)
+            end
+            end
+
+            if #minimized == 0 then return end
+
+                -- Reverse order: last minimized = last in table
+                local last_minimized = minimized[#minimized]
+                last_minimized.minimized = false
+                client.focus = last_minimized
+                last_minimized:raise()
+                last_minimized:jump_to(false)
+                end, {description = "(un)Minimize last minimized window", group = "client"}),
+
     
     -- Maximize window
     awful.key({ variables.modkey }, "m", function(c) 
