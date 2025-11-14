@@ -4,9 +4,10 @@
 -- fonts, colors, borders, gaps, icons, and more.
 --------------------------------------------------------------------------------
 
+local beautiful    = require("beautiful")
 local theme_assets = require("beautiful.theme_assets")
 local xresources   = require("beautiful.xresources")
-local dpi          = xresources.apply_dpi
+local dpi          = require("beautiful.xresources").apply_dpi
 
 local gears        = require("gears")
 local gfs          = require("gears.filesystem")
@@ -17,7 +18,7 @@ local theme = {}
 --------------------------------------------------------------------------------
 -- Fonts and Colors
 --------------------------------------------------------------------------------
-theme.font          = "Roboto Mono Nerd Font 12"
+theme.font          = "Comic Sans Bold 10"
 
 -- GitHub theme colors
 theme.gh_fg        = "#d0d7de"   -- Foreground text
@@ -32,7 +33,8 @@ theme.gh_cyan      = "#39c5cf"   -- Tags, tokens
 theme.gh_selection = "#415555"   -- Selection background
 theme.gh_highlight = "#4DFFDA"   -- Highlighted text
 theme.gh_caret     = "#7dc4e4"   -- Cursor/caret color
-theme.gh_invisibles = "#2f363d"  -- Invisible characters
+theme.gh_invisibles= "#2f363d"  -- Invisible characters
+theme.gh_mantle    = "#1e2030"  -- Invisible characters
 
 -- Background colors for different UI elements (using GitHub colors)
 theme.bg_normal     = theme.gh_bg        -- Normal background
@@ -46,6 +48,18 @@ theme.fg_normal     = theme.gh_fg        -- Normal text color
 theme.fg_focus      = theme.gh_bg        -- Focused text color
 theme.fg_urgent     = theme.gh_fg        -- Urgent text color
 theme.fg_minimize   = theme.gh_comment   -- Minimized text color
+
+theme.titlebar_bg_normal   = theme.gh_mantle   -- inactive
+theme.titlebar_bg_focus    = theme.gh_mantle   -- active window
+theme.titlebar_bg_urgent   = theme.gh_red   -- urgent
+
+theme.titlebar_fg_normal   = theme.gh_caret   -- inactive
+theme.titlebar_fg_focus    = theme.gh_caret   -- active window
+
+local function rc(img) return gears.color.recolor_image(img, theme.titlebar_fg_focus) end
+theme.titlebar_close_button_normal = rc(theme.titlebar_close_button_normal)
+theme.titlebar_close_button_focus  = rc(theme.titlebar_close_button_focus)
+-- (repeat for minimize/maximize)
 
 --------------------------------------------------------------------------------
 -- Window Borders and Gaps

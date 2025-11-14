@@ -30,27 +30,28 @@ local function setup_client_signals()
     -- Add a titlebar if titlebars_enabled is set to true in the rules
     client.connect_signal("request::titlebars", function(c)
         -- Custom titlebar setup
-        awful.titlebar(c):setup {
+        awful.titlebar(c, { size = 21 }):setup {
             { -- Left
                 awful.titlebar.widget.iconwidget(c),
-                layout = wibox.layout.fixed.horizontal
+                awful.titlebar.widget.floatingbutton(c),
+                awful.titlebar.widget.ontopbutton(c),
+                awful.titlebar.widget.stickybutton(c),
+                layout = wibox.layout.fixed.horizontal ()
             },
             { -- Middle
                 { -- Title
                     align = "center",
                     widget = awful.titlebar.widget.titlewidget(c)
                 },
-                layout = wibox.layout.flex.horizontal
+                layout = wibox.layout.flex.horizontal ()
             },
             { -- Right
-                awful.titlebar.widget.floatingbutton(c),
+                awful.titlebar.widget.minimizebutton(c),
                 awful.titlebar.widget.maximizedbutton(c),
-                awful.titlebar.widget.stickybutton(c),
-                awful.titlebar.widget.ontopbutton(c),
                 awful.titlebar.widget.closebutton(c),
                 layout = wibox.layout.fixed.horizontal()
             },
-            layout = wibox.layout.align.horizontal
+            layout = wibox.layout.align.horizontal,
         }
     end)
 

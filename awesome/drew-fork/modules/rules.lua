@@ -113,6 +113,18 @@ local rules = {
         rule_any = { type = { "dialog", "floating", } },
         properties = { titlebars_enabled = true }
     },
+    {
+        rule = { class = "dolphin" },
+        properties = { titlebars_enabled = true }
+    },
+    {
+        rule = { class = "kate" },
+        properties = { titlebars_enabled = true }
+    },
+    {
+        rule = { class = "Brave" },
+        properties = { titlebars_enabled = true }
+    },
     -- Assign applications to specific tags
     {
         rule = { class = "GitHub Desktop" },
