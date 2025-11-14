@@ -160,6 +160,13 @@ theme.awesome_icon = theme_assets.awesome_icon(theme.menu_height, theme.gh_blue,
 -- Specify an icon theme for your applications (set to nil to use system defaults)
 theme.icon_theme = nil
 
+
+--beautiful.border_width = 2  -- or your preferred size
+--beautiful.border_color_normal = "#000000"  -- change the color if desired
+--beautiful.border_color_focus = "#ff0000"   -- focus border color
+--beautiful.titlebar_bg_normal = "#222222"   -- background for titlebar when inactive
+--beautiful.titlebar_bg_focus = "#ff0000"    -- background for titlebar when active
+
 return theme
 
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80

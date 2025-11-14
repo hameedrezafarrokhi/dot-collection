@@ -10,7 +10,13 @@ local layouts = {
     awful.layout.suit.tile.left,      -- Master on right, stacking clients on left
     awful.layout.suit.fair,           -- Fair distribution of area among clients
     awful.layout.suit.fair.horizontal, -- Fair distribution, horizontal layout
-    awful.layout.suit.spiral,         -- Spiral layout
+    awful.layout.suit.spiral.dwindle,         -- Spiral layout
+    awful.layout.suit.floating,         -- Floating layout
+    awful.layout.suit.tile.bottom,      -- Master on bottom, stacking
+    awful.layout.suit.tile.top,      -- Master on top, stacking
+    awful.layout.suit.magnifier,      -- Master on bottom, stacking
+    awful.layout.suit.max,      -- Master on top, stacking
+    awful.layout.suit.max.fullscreen,      -- Master on top, stacking
 }
 
 -- Set the available layouts

@@ -45,7 +45,7 @@ local function setup_wibar(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            spacing = 2,
+            spacing = 6,
             layoutbox,
             separator,
             taglist,
@@ -70,9 +70,9 @@ local function setup_wibar(s)
             },
             widgets.cpu_widget,
             widgets.mem_widget,
-            widgets.clock_widget,
             widgets.volume_widget,
-            widgets.bluetooth_widget,
+            widgets.clock_widget,
+          --widgets.bluetooth_widget,
         },
     }
 end

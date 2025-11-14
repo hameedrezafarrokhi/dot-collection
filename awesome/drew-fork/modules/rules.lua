@@ -13,6 +13,7 @@ local clientbuttons = keys.clientbuttons
 -- Define rules
 local rules = {
     -- Default rule for all clients
+
     {
         rule = {},
         properties = {
@@ -58,7 +59,7 @@ local rules = {
                 "scratchpad-ranger",
                 "scratchpad-pulsemixer",
                 "scratchpad-music",
-                "pavucontrol"
+              --"pavucontrol"
             },
             class = {
                 "St-scratchpad"
@@ -72,11 +73,34 @@ local rules = {
             requests_no_titlebar = true
         }
     },
+
+    -- pavucontrol window
+
+    {
+        rule_any = {
+            instance = {
+                "pavucontrol"
+            },
+            class = {
+                "St-scratchpad"
+            }
+        },
+        properties = {
+            floating = true,
+            sticky = true,
+            ontop = true,
+            skip_taskbar = true,
+            titlebars_enabled = true,
+            requests_no_titlebar = false
+        }
+    },
+
     -- Galculator specific size
     {
         rule = { class = "Galculator" },
         properties = { 
             floating = true,
+            titlebars_enabled = true,
             width = 900,
             height = 600
         },
@@ -86,8 +110,8 @@ local rules = {
     },
     -- Disable titlebars by default for normal clients and dialogs
     {
-        rule_any = { type = { "normal", "dialog" } },
-        properties = { titlebars_enabled = false }
+        rule_any = { type = { "dialog", "floating", } },
+        properties = { titlebars_enabled = true }
     },
     -- Assign applications to specific tags
     {
@@ -106,6 +130,26 @@ local rules = {
         rule = { class = "discord" },
         properties = { screen = 1, tag = "8", switchtotag = true }
     },
+
+    {
+        rule = { floating = true },
+        properties = {
+            border_width = beautiful.border_width,
+            border_color = beautiful.border_focus,
+            titlebars_enabled = true,  -- Enable titlebar for all floating windows
+        }
+    },
+
+--    {
+--        rule = { class = "Kitty" },  -- Example: Apply to Firefox
+--        properties = {
+--            floating = true,
+--            border_width = beautiful.border_width or 2,
+--            border_color = beautiful.border_focus or "#ff0000",
+--            titlebars_enabled = true,
+--        }
+--    },
+
 }
 
 -- Initialize function
